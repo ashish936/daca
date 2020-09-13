@@ -1,0 +1,10 @@
+.tosSection {
+    position: relative;
+    margin: 100px 10px;
+    border: 1px solid;
+    border-radius: 3px;
+    -webkit-text-stroke: thin;
+    background-blend-mode: darken;
+    background-color: brown;
+    color: white;
+}
