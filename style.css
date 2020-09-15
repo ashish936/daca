@@ -2,6 +2,12 @@ body{
     background-color: whitesmoke  ;
 }
 
+h1, h2, h3, p{
+    font-weight: 500;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+}
+
 .tosSection {
     text-align: center;
     position: relative;
@@ -11,28 +17,24 @@ body{
     background-color: #fff;
 }
 
+.allOtherSection{
+    margin: 90px;
+}
+
 .startBtn{
     margin-right: 25px;
-    background-color: whitesmoke;
+    font-size: medium;
+    
 }
 
 .stopBtn{
     margin-left: 25px;
-    background-color: whitesmoke;
-}
-.allOtherSection {
-    text-align: center;
-    position: relative;
-    padding: 10px;
-    box-shadow: 0px 2px 2px 0 rgba(0,0,0, .14), 0 3px 1px -2px rgba(0, 0 , 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
-    margin: 90px;
-    background-color: #fff;
+    font-size: medium;
 }
 
 .totalTask, .aht, .tat{
     text-align: center;
     padding: 10px;
-    margin: 5px;
     box-shadow: 0px 2px 2px 0 rgba(0,0,0, .14), 0 3px 1px -2px rgba(0, 0 , 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
     background-color: #fff;
 }
