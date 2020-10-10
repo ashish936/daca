@@ -17,7 +17,7 @@
 // }
 
 // setInterval(timeLeft,1000);
-let counter = 3590;
+let counter = 0;
 let min,hour;
 
 
