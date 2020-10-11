@@ -18,15 +18,13 @@
 
 // setInterval(timeLeft,1000);
 let counter = 0;
-let min,hour;
-
 
 function seconds(counter) {
     // if(counter < 60) return counter;
     // else {
     //     //counter = Math.floor(counter/60); // this is for minutes
     //}
-    return (counter % 60) + 1;
+    return (counter % 60) +1;
     
 }
 function minutes(counter) {
@@ -41,13 +39,26 @@ function hours(counter) {
 
 }
 
-function timeLeft() {
+function mainCounter() {
     
-    counter++;
     console.log(counter);
     const mainTimer = document.querySelector('.main-timer');
     //mainTimer.innerHTML = counter;
     mainTimer.innerHTML = `${hours(counter)}h  ${minutes(counter)}m  ${seconds(counter)}s`
+    counter++;
 }
 
-setInterval(timeLeft, 1000);
+function startTimer() {
+    var handle = setInterval(mainCounter, 1000);
+}
+
+function stopTimer() {
+    console.log("stop button clicked");
+    clearInterval(handle);
+}
+
+const startButton = document.querySelector('.startBtn');
+const stopButton = document.querySelector('.stopBtn');
+
+startButton.addEventListener("click", startTimer);
+stopButton.addEventListener("click", stopTimer);
